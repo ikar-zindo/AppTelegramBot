@@ -1,4 +1,4 @@
-package de.tel.ran.domian;
+package ran.domain;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -10,13 +10,12 @@ import java.time.LocalDateTime;
 @Builder
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-
 public class User {
 
-   String telegramId;
-   String name;
-   String phoneNumber;
-   LocalDateTime lastSmoke;
-   Integer minutesBetweenSmoking;
-   Integer cigarettesCount;
+  String telegramId;
+  String name;
+  String phoneNumber;
+  LocalDateTime lastSmoke;
+  Integer minutesBetweenSmoking;
+  Integer cigarettesCount;
 }

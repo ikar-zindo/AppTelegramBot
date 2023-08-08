@@ -12,4 +12,6 @@ public interface UserRepository {
    LocalDateTime getLastSmokeTime(String telegramId);
    User getNearestUserForNotification();
    Set<User> getUsersByNotificationPeriod(LocalDateTime from, LocalDateTime to);
+
+   User findByTelegramId(String telegramId);
 }
